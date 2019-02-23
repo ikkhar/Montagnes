@@ -1,0 +1,238 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+/*Premiere partie Jumbotron > Header avec MENU 
+---------*/
+ /*-- DEBUT PARTIE1 RAJOUTEE GEORGES -*/
+#myNavbar {
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: 99;
+	height: 685px;
+}
+
+#myNavbar li {
+	width: 230px;
+	border-bottom: grey 1px solid;
+}
+
+#myNavbar a {
+	padding:15px;
+	margin: 0;
+}
+
+#myNavbar a:hover {
+background-color: grey;
+border-radius: 0;
+}
+
+#barsBtn {
+	float: right;
+	z-index: 99;
+}
+
+#bars {
+	font-size: 36px;
+	border: none;
+}
+
+.barsColor {
+	color: black;
+}
+
+.filter {
+	filter: brightness(50%);
+}
+
+.bg-jumb-home {
+	background-image: url(images/bg_header.jpg);
+	background-size: cover;
+	/* */
+	padding-left: 100px;
+	padding-right: 100px;
+
+}
+
+header #h1 {
+	padding-top: 65px;
+	padding-bottom: 50px;
+	font-family: 'Roboto Slab', 'serif';
+	font-weight: bold;
+}
+
+#home .p {
+	font-size: 21px;
+    font-weight: 100;
+    line-height: 31px;
+   	max-width: 600px;
+   	margin: auto;
+}
+
+#btnLearn {
+	margin: 50px;
+}
+
+#logoSimplon {
+	width: 250px;
+	float:left;
+	margin-right: -100px;
+}
+ /*-- FIN PARTIE1 RAJOUTEE GEORGES -*/
+ 
+/*---Jumbotron nuages 
+-------------------------------*/
+
+.bg-jumb-nuage {
+    background: url('images/bg_nuage.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+
+/* pour les bordures qui forment 2 carrés*/
+.carre {
+	border:1px solid white;
+	padding: 10px;
+	margin: 30px;
+	text-align: center;
+}
+
+/*--Jumbotron appareil photo 
+-----------------------*/
+.bg-jumb-history {
+    background: url('images/bg_appareil_photo.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.opacity {
+    background-color: rgba(128, 215, 247, 0.5);
+    color: white;
+    padding: 4%;
+}
+
+/*--Pour les liens au dessus de la gallery 
+-----------*/
+.liens{
+	padding-top: 50px;
+	padding-bottom: 25px;
+	font-weight: bold;
+}
+
+/*--Pour les images de la gallery 
+---------------------*/
+#photos {
+	background-color: #DDDDDD;
+	text-align: center;
+}
+
+section img {
+	padding: 8px;
+	width: 100%;
+}
+
+
+/* - Jumbotron Newsletter 
+---------------------------------------*/
+/*.bg-jumb-contact{
+	background-image: url(images/bg_newsletter.jpg);
+	filter: brightness(60%);
+}*/
+
+
+.bg-jumb-contact {
+   position:relative;
+   background:none;
+}
+.bg-jumb-contact:before {
+   content:"";
+   display:block;
+   position:absolute;
+   top:0;
+   left:0;
+   right:0;
+   bottom:0;
+   z-index:-1;
+
+   /* Add Blur */
+   -webkit-filter: blur(5px);
+   -moz-filter: blur(5px);
+   -o-filter: blur(5px);
+   -ms-filter: blur(5px);
+   filter: blur(5px);
+
+   /* Background */
+   background-image: url(images/bg_newsletter.jpg);
+   -webkit-background-size: auto;
+   -moz-background-size: auto;
+   background-size: auto;
+  -o-background-size: auto;
+  filter: brightness(70%);
+}
+
+/*VERIFIER LA PORTEE DE 'i'*/
+section i , footer i{
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px white;
+  padding: 0.5em 0.6em;
+  border: 2px solid white;
+}
+
+
+/* - FOOOOOOOOTER ------------------------------------------*/
+footer{
+	background-color: #24323B;
+}
+
+/*--------- MEDIA QUERIES
+-------*/
+
+ /*-- DEBUT PARTIE2 RAJOUTEE GEORGES -*/
+@media screen and (min-width: 768px) {
+
+	#logoSimplon {
+	width: 600px;
+
+	}
+
+}
+
+@media screen and (min-width: 991px) {
+
+	#logoSimplon {
+	width: 260px;
+	}
+
+}
+
+ /*-- FIN PARTIE2 RAJOUTEE GEORGES -*/
+
+@media screen and (max-width: 767px){
+	.photoxs {
+		display: block;}
+	.photosm {
+		display: none;}
+	.photolg {
+		display: none;}
+}
+@media screen and (min-width: 767px){
+	.photoxs {
+		display: none;}
+	.photosm {
+		display: block;}
+	.photolg {
+		display: none;}
+}
+@media screen and (min-width: 1199px){
+	.photoxs {
+		display: none;}
+	.photosm {
+		display: none;}
+	.photolg {
+		display: block;}
+}
+
+
+
+/*===================================back to top===========================*/
